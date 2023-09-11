@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jspiders Dashboard</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="bootstrap/Fontawesome/css/all.css">
+</head>
+<body>
+  <!-- --- Navbar Starts--- -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+    <div class="container-fluid">
+        <a href="index.html" class="navbar-brand text-warning">
+            <i class="fa fa-snowflake pr-2"></i>Jspiders
+        </a>
+    
+    <button class="navbar-toggler" data-target="#link" data-toggle="collapse">
+        <span class="navbar-toggler-icon">
+        </span>
+    </button>
+    <div class="collapse navbar-collapse" id="link">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <i class="fa fa-chart-bar pr-2 text-muted"></i>
+                    Dashboard</a>
+            </li>
+            <li class="nav-item">
+                <a href="task.html" class="nav-link">
+                    <i class="fa fa-list pr-2 text-muted"></i>Tasks</a>
+            </li>
+            <li class="nav-item">
+                <a href="category.html" class="nav-link">
+                    <i class="fa fa-sitemap pr-2 text-muted"></i>Categories</a>
+            </li>
+            <li class="nav-item">
+                <a href="employee.html" class="nav-link">
+                    <i class="fa fa-users pr-2 text-muted"></i>Employees</a>
+            </li>
+        </ul>
+        
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+                
+                    <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-sign-in pr-2 text-muted"></i>Chanchal</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="profile.html">
+                                <i class="fa fa-user-circle pr-2"></i>Profile</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-cogs pr-2"></i>Settings</a>
+                          </div>
+                
+            </li>
+            <li class="nav-item">
+                <a href="Login.html" class="nav-link">
+                    <i class="fa fa-sign-out pr-2 text-muted"></i>LogOut</a>
+            </li>
+           
+        </ul>           
+    </div>
+
+  
+</div>
+    
+</nav>
+<!-- --- Navbar Ends--- -->
+
+<!-- --- Dashbord pic Starts--- -->
+<div class="container-fluid">
+    <div class="row bg-secondary">
+        <div class="col">
+            <a href="category.html" class="navbar-brand text-white pl-4" style="font-size: 29px;">
+                <i class="fa fa-sitemap text-muted pr-2 "></i>Category
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid bg-light">
+    <div class="row p-2">
+        <div class="col">
+            <!-- --- Empty Column ---- -->
+        </div>
+        <div class="col">
+            <form action="" class="form-inline">
+                <div class="form-group">
+                    <input type="search" class="form-control " placeholder="Enter New Category">
+                    <input type="submit" class="btn btn-md btn-primary" value="SERCH">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- --- Table for Tasks Details Starts --- -->
+<div class="container mt-3">
+    <div class="row">
+        <div class="col">
+            <div class="card">
+                <div class="card-header bg-success">
+                    <h2 class="text-white">Category Details</h2>
+                </div>
+                <div class="card-body bg-light">
+                    <div class="container-fluid">
+                        <table class="table text-center table-responsive-sm">
+                            <thead class="bg-default text-white">
+                                <tr>
+                                    <td>S.No</td>
+                                    <td>Name</td>
+                                    <td>Email</td>
+                                    <td>Task</td>
+                                    <td>Category</td>
+                                    <td>Level</td>
+                                    <td>Details</td>
+                                </tr>
+                            </thead>
+
+                            <tbody style="color: rgb(72, 76, 72);">
+                                <tr>
+                                    <td>01</td>
+                                    <td>Pranab Patra</td>
+                                    <td>pranab@gmail.com</td>
+                                    <td>Talk with Clints</td>
+                                    <td>Management</td>
+                                    <td>Medium</td>
+                                    <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>02</td>
+                                    <td>Manash Das</td>
+                                    <td>manashd@gmail.com</td>
+                                    <td>Coding</td>
+                                    <td>Development</td>
+                                    <td>Medium</td>
+                                    <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>03</td>
+                                    <td>Arkadeep Pramanik</td>
+                                    <td>arkadeep@gmail.com</td>
+                                    <td>Bugs Fixing</td>
+                                    <td>Development</td>
+                                    <td>Medium</td>
+                                    <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>04</td>
+                                    <td>pamir Nayak</td>
+                                    <td>pamirNayak@gmail.com</td>
+                                    <td>Bugs Fixing</td>
+                                    <td>Development</td>
+                                    <td>Medium</td>
+                                    <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>05</td>
+                                    <td>Suraj Dutta</td>
+                                    <td>duttasuraj@gmail.com</td>
+                                    <td>Code Test</td>
+                                    <td>Testing</td>
+                                    <td>Easy</td>
+                                    <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                </tr>
+                                <tr>
+                                    <td>06</td>
+                                    <td>Sanjay Ku. Santra</td>
+                                    <td>arkadeep@gmail.com</td>
+                                    <td>Add User Data</td>
+                                    <td>Data Entry</td>
+                                    <td>Easy</td>
+                                    <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- --- Table for Tasks Details Starts --- -->
+
+<!-- --- Footer Section Starts ---- -->
+<footer class="page-footer font-small blue">
+    <div class="footer-copyright bg-dark text-center py-3">© 2023 Copyright:
+        <a href="/"> Jspiders.com</a>
+        <p>All Rights Reserved!</p>
+    </div>
+    
+</footer>
+<!-- --- Footer Section Ends ---- -->
+<!-- --- Dashbord pic Ends--- -->
+
+ <!-- --- script code --- -->
+ <script src="bootstrap/js/jquery.js"></script>
+ <script src="bootstrap/js/popper.js"></script>
+ <script src="bootstrap/js/bootstrap.js"></script>
+ <script src="bootstrap/js/mdb.js"></script>
+</body>
+</html>

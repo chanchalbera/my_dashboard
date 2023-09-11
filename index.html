@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jspiders Dashboard</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="bootstrap/Fontawesome/css/all.css">
+</head>
+<body>
+    
+    <!-- --- Navbar Starts--- -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container-fluid">
+            <a href="" class="navbar-brand text-warning">
+                <i class="fa fa-snowflake pr-2"></i>Jspiders
+            </a>
+        
+        <button class="navbar-toggler" data-target="#link" data-toggle="collapse">
+            <span class="navbar-toggler-icon">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" id="link">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">
+                        <i class="fa fa-chart-bar pr-2 text-muted"></i>
+                        Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="task.html" class="nav-link">
+                        <i class="fa fa-list pr-2 text-muted"></i>Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a href="category.html" class="nav-link">
+                        <i class="fa fa-sitemap pr-2 text-muted"></i>Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Employee.html" class="nav-link">
+                        <i class="fa fa-users pr-2 text-muted"></i>Employees</a>
+                </li>
+            </ul>
+            
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    
+                        <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fa fa-sign-in pr-2 text-muted"></i>Chanchal</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="fa fa-user-circle pr-2"></i>Profile</a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fa fa-cogs pr-2"></i>Settings</a>
+                              </div>
+                    
+                </li>
+                <li class="nav-item">
+                    <a href="Login.html" class="nav-link">
+                        <i class="fa fa-sign-out pr-2 text-muted"></i>LogOut</a>
+                </li>
+               
+            </ul>           
+        </div>
+
+      
+    </div>
+        
+    </nav>
+    <!-- --- Navbar Ends--- -->
+
+    <!-- --- Dashbord pic Starts--- -->
+    <div class="container-fluid">
+        <div class="row bg-secondary">
+            <div class="col">
+                <a href="" class="navbar-brand text-white pl-4" style="font-size: 29px;">
+                    <i class="fa fa-chart-bar text-muted pr-2 "></i>Dashboard
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- --- Dashbord pic Ends--- -->
+
+    <!-- --- Dashbord Add Task starts--- -->
+    <section class="mt-2 p-3">
+        <div class="row justify-content-around">
+            <div class="col-lg-4 bg-primary m-2 p-2 text-center">
+                <a class="text-white " href="" data-target="#tasks" data-toggle="modal" >
+                    <i class="fa fa-plus-circle pr-2" ></i>ADD TASKS</a>
+            </div>
+            <div class="col-lg-3 bg-primary m-2 p-2 text-center">
+                <a class="text-white " href="" data-target="#Category" data-toggle="modal">
+                    <i class="fa fa-plus-circle pr-2"></i>ADD CATEGORIES</a>
+            </div>
+            <div class="col-lg-4 bg-primary m-2 p-2 text-center">
+                <a class="text-white " href=""  data-target="#Employees" data-toggle="modal">
+                    <i class="fa fa-plus-circle pr-2"></i>ADD EMPLOYEES</a>
+            </div>
+            
+        </div>
+    </section>
+    <!-- --- Dashbord Add Task ends--- -->
+    <!-- --- modal--- -->
+    <div class="modal animated zoomInRight" id="tasks">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                   <h3 class="text-white">
+                    Add Tasks
+                   </h3>
+                   <button class="close" data-dismiss="modal">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Tasks</label>
+                            <input type="text" class="form-control" placeholder="Task Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Category</label>
+                            <select name="" id="" class="form-control">
+                                <option value="">Development</option>
+                                <option value="">Management</option>
+                                <option value="">Coding</option>
+                                <option value="">Testing</option>
+                            </select>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="">Image Upload</label>
+                            <div>
+
+                                <input type="file">
+                                <p>Max Size: 3MB</p>
+                            </div>
+                            
+                        </div>
+                        <div class="form-group">
+                            <label for="">Description</label>
+                            <textarea class="form-control" id="editor"></textarea>
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <button class=" ml-2 btn btn-primary">Add Task</button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="tasks">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---- Another Model for Add Category ---- -->
+    <div class="modal animated zoomIn" id="Category">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                   <h3 class="text-white">
+                    Add Category
+                   </h3>
+                   <button class="close" data-dismiss="modal">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Category Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Category Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Category Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Category Name">
+                        </div>
+                       
+                      
+                        <div class="form-group">
+                            <label for="">Description</label>
+                            <textarea class="form-control" id="editor2"></textarea>
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <button class=" ml-2 btn btn-primary">Add Category</button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="Category">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- ---- Another Model for Add Category ---- -->
+     <div class="modal animated zoomInUp" id="Employees">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                   <h3 class="text-white">
+                    Add Employee
+                   </h3>
+                   <button class="close" data-dismiss="modal">
+                    <i class="fa fa-times-circle"></i>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input type="text" class="form-control" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Email Id</label>
+                            <input type="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Mobile No</label>
+                            <input type="number" class="form-control" placeholder="Enter Mobile No">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Dath Of Birth (DOB)</label>
+                            <input type="date" class="form-control" placeholder="Enter Dath Of Birth">
+                        </div>
+                       
+                      
+                        <div class="form-group">
+                            <label for="">Address</label>
+                            <textarea class="form-control" placeholder="Enter Your Address"></textarea>
+                            </div>
+                            
+                        </div>
+
+                        <div class="form-group">
+                            <button class=" ml-2 btn btn-primary">Add Employee</button>
+                            <button class="btn btn-primary" data-toggle="modal" data-target="Employees">Close</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --- Dashbord Add Current Starts--- -->
+    <div class="container-fluid mb-3">
+        <div class="row justify-content-around">
+            <div class="col-xl-9  col-sm-12 mt-2">
+                <div class="card">
+                    <div class="card-header bg-success">
+                        <h4 class="text-white">Current Tasks</h4>
+                    </div>
+                    <div class="card-body bg-light">
+                        <div class="container-fluid">
+                            <table class="table text-center table-responsive-sm">
+                                <thead class="bg-default text-white">
+                                    <tr>
+                                        <td>S.No</td>
+                                        <td>Name</td>
+                                        <td>Email</td>
+                                        <td>Task</td>
+                                        <td>Category</td>
+                                        <td>Level</td>
+                                        <td>Details</td>
+                                    </tr>
+                                </thead>
+
+                                <tbody style="color: rgb(72, 76, 72);">
+                                    <tr>
+                                        <td>01</td>
+                                        <td>Pranab Patra</td>
+                                        <td>pranab@gmail.com</td>
+                                        <td>Talk with Clints</td>
+                                        <td>Management</td>
+                                        <td>Medium</td>
+                                        <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>02</td>
+                                        <td>Manash Das</td>
+                                        <td>manashd@gmail.com</td>
+                                        <td>Coding</td>
+                                        <td>Development</td>
+                                        <td>Medium</td>
+                                        <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>03</td>
+                                        <td>Arkadeep Pramanik</td>
+                                        <td>arkadeep@gmail.com</td>
+                                        <td>Bugs Fixing</td>
+                                        <td>Development</td>
+                                        <td>Medium</td>
+                                        <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>04</td>
+                                        <td>pamir Nayak</td>
+                                        <td>pamirNayak@gmail.com</td>
+                                        <td>Bugs Fixing</td>
+                                        <td>Development</td>
+                                        <td>Medium</td>
+                                        <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>05</td>
+                                        <td>Suraj Dutta</td>
+                                        <td>duttasuraj@gmail.com</td>
+                                        <td>Code Test</td>
+                                        <td>Testing</td>
+                                        <td>Easy</td>
+                                        <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>06</td>
+                                        <td>Sanjay Ku. Santra</td>
+                                        <td>arkadeep@gmail.com</td>
+                                        <td>Add User Data</td>
+                                        <td>Data Entry</td>
+                                        <td>Easy</td>
+                                        <td><a class="btn btn-sm btn-outline-success">Details</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- --- Another Part of Current Tasks --- -->
+            <div class="col-xl-3 col-md-8 col-sm-12 mt-2 text-white">
+                <div class="row"> 
+                    <div class="col-12">
+                        <div class="card bg-primary">
+                            <div class="card-body text-center">
+                              <div class="row ">
+                                  <div class="col">
+                                      
+                                      <i class="fa fa-list fa-4x"></i>
+                                      
+                                  </div>
+                                  <div class="col text-center">
+                                      <h3>08</h3>
+                                      <p>Tasks</p>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-light  text-center"><a href="task.html" class="text-dark">
+
+                                <h5 >View Details <i class=" fa fa-solid fa-circle-arrow-right"></i> </h5>
+                            </a>
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+                <div class="row mt-3"> 
+                    <div class="col-12">
+                        <div class="card bg-success">
+                            <div class="card-body text-center">
+                              <div class="row">
+                                  <div class="col">
+                                      
+                                      <i class="fa fa-sitemap fa-4x"></i>
+                                      
+                                  </div>
+                                  <div class="col text-center">
+                                      <h3>06</h3>
+                                      <p >Categories</p>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-light text-center">
+                                <a href="category.html" class="text-dark">
+                                    <h5 >View Details <i class=" fa fa-solid fa-circle-arrow-right"></i> </h5>
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+                <div class="row mt-3"> 
+                    <div class="col-12">
+                        <div class="card bg-primary">
+                            <div class="card-body text-center">
+                              <div class="row">
+                                  <div class="col">
+                                      
+                                      <i class="fa fa-list fa-4x"></i>
+                                      
+                                  </div>
+                                  <div class="col text-center">
+                                      <h3>09</h3>
+                                      <p >Employees</p>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="card-footer bg-light text-center">
+                                <a href="employee.html" class="text-dark">
+                                    <h5 >View Details <i class=" fa fa-solid fa-circle-arrow-right"></i> </h5>
+                                </a>
+                            </div>
+                          </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --- Dashbord Add Current Endss--- -->
+
+    <!-- --- Footer Section Starts ---- -->
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright bg-dark text-center py-3">© 2023 Copyright:
+            <a href="/"> Jspiders.com</a>
+            <p>All Rights Reserved!</p>
+        </div>
+        
+    </footer>
+    <!-- --- Footer Section Ends ---- -->
+
+
+
+    <!-- --- script code --- -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/mdb.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/39.0.2/classic/ckeditor.js"></script>
+    <script>
+        ClassicEditor
+                .create( document.querySelector( '#editor' ) )
+                .then( editor => {
+                        console.log( editor )
+                } )
+                .catch( error => {
+                        console.error( error )
+                } )
+    </script>
+    <script>
+        ClassicEditor
+                .create( document.querySelector( '#editor2' ) )
+                .then( editor => {
+                        console.log( editor )
+                } )
+                .catch( error => {
+                        console.error( error )
+                } )
+    </script>
+</body>
+</html>

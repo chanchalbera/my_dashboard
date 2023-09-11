@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jspiders Dashboard</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/mdb.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+    <link rel="stylesheet" href="bootstrap/Fontawesome/css/all.css">
+</head>
+
+<body>
+    <!-- --- Navbar Starts--- -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md">
+        <div class="container-fluid">
+            <a href="index.html" class="navbar-brand text-warning">
+                <i class="fa fa-snowflake pr-2"></i>Jspiders
+            </a>
+
+            <button class="navbar-toggler" data-target="#link" data-toggle="collapse">
+                <span class="navbar-toggler-icon">
+                </span>
+            </button>
+            <div class="collapse navbar-collapse" id="link">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">
+                            <i class="fa fa-chart-bar pr-2 text-muted"></i>
+                            Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="task.html" class="nav-link">
+                            <i class="fa fa-list pr-2 text-muted"></i>Tasks</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="category.html" class="nav-link">
+                            <i class="fa fa-sitemap pr-2 text-muted"></i>Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="employee.html" class="nav-link">
+                            <i class="fa fa-users pr-2 text-muted"></i>Employees</a>
+                    </li>
+                </ul>
+
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+
+                        <a href="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="fa fa-sign-in pr-2 text-muted"></i>Chanchal</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="profile.html">
+                                <i class="fa fa-user-circle pr-2"></i>Profile</a>
+                            <a class="dropdown-item" href="#">
+                                <i class="fa fa-cogs pr-2"></i>Settings</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="Login.html" class="nav-link">
+                            <i class="fa fa-sign-out pr-2 text-muted"></i>LogOut</a>
+                    </li>
+
+                </ul>
+            </div>
+
+
+        </div>
+
+    </nav>
+    <!-- --- Navbar Ends--- -->
+
+    <!-- --- Dashbord pic Starts--- -->
+    <div class="container-fluid">
+        <div class="row bg-secondary">
+            <div class="col">
+                <a href="profile.html" class="navbar-brand text-white pl-4" style="font-size: 29px;">
+                    <i class="fa fa-user-circle text-muted pr-2 "></i>Profile
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="container-fluid mt-2">
+        <div class="row justify-content-around">
+            <div class="col-lg-4 bg-primary m-2 p-2 text-center">
+                <a class="text-white " href="index.html">
+                    <i class="fa fa-circle-arrow-left pr-2"></i>DASHBOARD</a>
+            </div>
+            <div class="col-lg-3 bg-primary m-2 p-2 text-center">
+                <a class="text-white " href="" data-target="#update" data-toggle="modal">
+                    <i class="fa fa-lock pr-2"></i>UPDATE PASSWORD</a>
+            </div>
+            <div class="col-lg-4 bg-primary m-2 p-2 text-center">
+                <a class="text-white " href="">
+                    <i class="fa fa-times-circle pr-2"></i>DELETE ACCOUNT</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="modal" id="update">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger">
+                    <h5 class="text-white">
+                        UPDATE PASSWORD
+                    </h5>
+                    <button class="close" data-dismiss="modal">
+                        <i class="fa fa-times-circle"></i>
+                    </button>
+                </div>
+
+                <!-- Modal Starts -->
+                <div class="modal-body bg-light">
+                    <form action="">
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Enter Old password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Enter New password">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Confirm password">
+                        </div>
+        
+                    </form>
+
+                </div>
+                <div class="modal-footer bg-info">
+                    <div class="form-group text-center">
+                        <button class=" ml-2 btn btn-sm btn-primary">Update</button>
+                        <button class="btn btn-sm btn-primary" data-toggle="modal"
+                            data-target="tasks">Close</button>
+                    </div>
+                </div>
+                <!-- Modal Ends -->
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- --- About Me Details Starts --- -->
+    <section class="p-4">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-header bg-dark text-white">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class="card-body bg-light">
+                        <div class="card mt-4">
+                            <div class="card-body">
+                                <h2>👋 Hi there! I'm Chanchal Bera 😊</h2>
+                            </div>
+                        </div>
+                        <div class="card mt-4">
+                            <div class="card-body">
+
+                                <p style="margin-bottom: 10px;">💼 Professionally, I'm a Java Developer ☕️ with a
+                                    passion for crafting elegant and efficient code. I specialize in creating robust and
+                                    scalable web applications using Java, HTML, CSS, and JavaScript. 🌐 
+                                </p>
+
+                                <p style="margin-bottom: 10px;">📚 I have a strong foundation in Core Java, allowing me
+                                    to build powerful back-end systems that drive seamless user experiences. 💻
+                                </p>
+
+                                <p style="margin-bottom: 10px;"> 🔍 I'm also proficient in SQL, which enables me to
+                                    design and manage databases efficiently, ensuring data integrity and reliability. 📊
+                                </p>
+
+                                <p style="margin-bottom: 10px;"> 🎨 On the front-end, I love the creative side of web
+                                    development. I enjoy working with HTML and CSS to design user-friendly interfaces
+                                    that not only look great but also deliver exceptional user experiences. 💡
+                                </p>
+
+                               
+
+                            </div>
+                        </div>
+                        <div class="card mt-4">
+                            <div class="card-body">
+                                <p style="margin-bottom: 10px;">🌟 What drives me is the opportunity to learn and grow
+                                    continuously in this ever-evolving tech landscape. I'm always exploring new
+                                    technologies and best practices to stay ahead in the game. 📈
+                                </p>
+
+                                <p style="margin-bottom: 10px;"> 🌍 Outside of coding, I'm an adventurer 🌄 and a foodie
+                                    🍔. I love exploring new places, trying different cuisines, and sharing my
+                                    experiences with friends and family. 🌮
+                                </p>
+
+                                <p style="margin-bottom: 10px;">🤝 Let's <a
+                                        href="https://www.linkedin.com/in/chanchal-bera-958736237/"
+                                        style="font-size: 20px; text-decoration: underline;">connect!</a> Whether you
+                                    want to collaborate on a project, discuss tech trends, or share travel stories, feel
+                                    free to reach out. I'm always up for a good conversation! 📧📱
+                                </p>
+
+                                <p style="margin-bottom: 10px;"> Thanks for stopping by, and I look forward to
+                                    connecting with you! 🙌🚀
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="card-footer bg-dark text-white">
+                        <h5>
+                            Thank You
+                            <i class="fa fa-smile"></i>
+                        </h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="p-image">
+                  
+                </div>
+                <div class="mt-2">
+
+                    <a href="" class="btn btn-block  bg-secondary text-white">
+                        <i class="fa fa-pen pr-2"></i>EDIT PROFILE</a>
+                </div>
+                <div class="mt-2">
+
+                    <a href="" class="btn btn-block  bg-danger text-white">
+                        <i class="fa fa-trash pr-2"></i>DELETE PHOTO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Footer Section Starts ---- -->
+    <footer class="page-footer font-small blue">
+        <div class="footer-copyright bg-dark text-center py-3">© 2023 Copyright:
+            <a href="/"> Jspiders.com</a>
+            <p>All Rights Reserved!</p>
+        </div>
+
+    </footer>
+    <!-- --- Footer Section Ends ---- -->
+    <!-- --- Dashbord pic Ends--- -->
+
+    <!-- --- script code --- -->
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/popper.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/mdb.js"></script>
+</body>
+
+</html>

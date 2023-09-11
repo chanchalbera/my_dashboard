@@ -1,0 +1,30 @@
+.bg-dark{
+    background: linear-gradient(45deg, rgb(73, 72, 72), rgb(20, 17, 17));
+}
+
+.dropdown-item:hover{
+    background-color: rgb(71, 66, 66);
+    color: white !important;
+}
+.card-footer{
+    color: rgb(60, 58, 58);
+}
+.card-footer .fa:hover{
+ cursor: pointer;   
+}
+.bg-secondary{
+    background: linear-gradient(45deg,rgb(3, 100, 3),rgb(78, 78, 232));
+}
+.bg-primary, .btn-primary{
+    background: linear-gradient(45deg,deeppink, orange);
+}
+.p-image{
+    border: 2px solid;
+    padding: 6px;
+    border-radius: 12px;
+    height: 300px !important;
+    width: 340px;
+    background-image: url(../../image/The_Boss_2.jpg);
+    background-position: center;
+    background-size: cover;
+}
